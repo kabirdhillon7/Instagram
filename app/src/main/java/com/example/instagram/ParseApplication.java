@@ -13,6 +13,9 @@ public class ParseApplication extends Application {
     public void onCreate() {
         super.onCreate();
 
+        // Register your parse models
+        ParseObject.registerSubclass(Post.class);
+
         Parse.initialize(new Parse.Configuration.Builder(this)
                 .applicationId("zt6C8Ze5ILqeVuKuwez0vimzPiO7aOXPsmUysDOG")
                 .clientKey("buMwnUXluqVgeNxjlgJfyxOBKiQt3t2LU7LmvBZM")
