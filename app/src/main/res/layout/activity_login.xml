@@ -8,21 +8,33 @@
     android:orientation="vertical"
     tools:context=".LoginActivity">
 
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginBottom="25dp"
+        tools:srcCompat="@drawable/nav_logo_whiteout" />
+
     <EditText
         android:id="@+id/etUsername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
         android:layout_weight="1"
-        android:hint="username"
-        android:ems="10" />
+        android:ems="10"
+        android:hint="@string/username"
+        android:importantForAutofill="no"
+        android:inputType="text" />
 
     <EditText
         android:id="@+id/etPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
         android:layout_weight="1"
+        android:autofillHints=""
         android:ems="10"
-        android:hint="password"
+        android:hint="@string/password"
         android:inputType="textPassword" />
 
     <Button
@@ -30,7 +42,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="Login" />
+        android:background="#03A9F4"
+        android:text="@string/login" />
 
 
 </LinearLayout>
